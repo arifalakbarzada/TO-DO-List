@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+i {
+    background: transparent;
+}
+
+.delete {
+    border: none;
+}
+
+.addTodo {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.createTodo {
+    display: flex;
+    width: 700px;
+    height: 30px;
+}
+
+.inputTodo {
+    width: 500px;
+    height: 30px;
+}
+#mode{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.dark{
+    background: #222;
+    color: #fff;
+}
+#light-mode,
+#dark-mode {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
