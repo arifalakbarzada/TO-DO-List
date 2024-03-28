@@ -6,6 +6,8 @@ const modeDark   = document.getElementById( "dark-mode" );
 let todos = [];
 const createTodo = ()=>{
     if (inputElem.value.trim() !== ``) {
+        todos.push(inputElem.value.trim());
+        localStorage.setItem("todos",JSON.stringify(todos));
         let elemLi = document.createElement("li");
         elemLi.innerText = inputElem.value;
         todoList.appendChild(elemLi);
