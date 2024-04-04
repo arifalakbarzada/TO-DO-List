@@ -45,15 +45,18 @@ i {
     width: 500px;
     height: 30px;
 }
-#mode{
+
+#mode {
     position: absolute;
     right: 0;
     top: 10px;
 }
-.dark{
+
+.dark {
     background: #222;
     color: #eee;
 }
+
 #light-mode,
 #dark-mode {
     cursor: pointer;

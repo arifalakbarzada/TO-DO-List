@@ -4,7 +4,7 @@ const todoList = document.querySelector(".todoList");
 const modeLight  = document.getElementById("light-mode");
 const modeDark   = document.getElementById( "dark-mode" );
 let todos = [];
-const createTodo = ()=>{
+function createTodo (){
     if (inputElem.value.trim() !== ``) {
         todos.push(inputElem.value.trim());
         localStorage.setItem("todos",JSON.stringify(todos));
@@ -18,6 +18,12 @@ const createTodo = ()=>{
         elemLi.appendChild(deleteBtn);
         deleteBtn.addEventListener("click", function(){
             this.parentElement.remove();
+        todos.forEach(item=>{
+            if(elemLi.textContent == item) {
+                let index = todos.indexOf(item);
+                todos.splice(index,1);
+            }
+        })  
             });
     }
     else{
